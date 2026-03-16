@@ -1,0 +1,7 @@
+{{ define "main" }}
+<article>
+  <h1>{{ .Title }}</h1>
+  {{ with .Params.date }}<p class="meta">Date: {{ . }}</p>{{ end }}
+  {{ .Content }}
+</article>
+{{ end }}
